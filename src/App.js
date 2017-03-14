@@ -4,14 +4,14 @@
 //
 
 import React, { Component } from 'react';
+import Mapbox from './Mapbox';
 
 class App extends Component {
-  constructor() {
-    super();
-  }
-
   render() {
-      return <p>Hello World 4</p>;
+      return (<div>
+              <p>Mapbox with React.js</p>
+              <Mapbox />
+              </div>);
   }
 }
 
