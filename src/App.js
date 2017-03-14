@@ -9,8 +9,9 @@ import Mapbox from './Mapbox';
 class App extends Component {
   render() {
       return (<div>
-              <p>Mapbox with React.js</p>
-              <Mapbox />
+              <Mapbox>
+                <p>Hello World</p>
+              </Mapbox>
               </div>);
   }
 }

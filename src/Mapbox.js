@@ -5,6 +5,7 @@
 
 import React, { Component } from 'react';
 import mapboxgl from 'mapbox-gl/dist/mapbox-gl.js';
+import './App.css';
 
 
 class Mapbox extends Component {
@@ -25,7 +26,10 @@ class Mapbox extends Component {
         }
   }
   render() {
-      return <div ref='map' style={{width:400, height:400, background:'#ff0'}}></div>;
+      return (<div className='full'>
+              <div ref='map' className='full'></div>
+              <div className='overlay'>{this.props.children}</div>
+              </div>);
   }
 }
 
