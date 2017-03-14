@@ -1,0 +1,6 @@
+npm WARN deprecated shelf-pack@1.1.0: This module is now under the @mapbox namespace: install @mapbox/shelf-pack instead
+npm WARN deprecated whoots-js@2.1.0: This module is now under the @mapbox namespace: install @mapbox/whoots-js instead
+npm WARN deprecated feature-filter@2.2.0: This package has been merged into the 'mapbox-gl-style-spec' package
+npm WARN deprecated geojson-area@0.1.0: This module is now under the @mapbox namespace: install @mapbox/geojson-area instead
+npm WARN prefer global jsonlint-lines-primitives@1.6.0 should be installed with -g
+
