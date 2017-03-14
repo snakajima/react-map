@@ -11,7 +11,7 @@ class App extends Component {
   }
 
   render() {
-      return <p>Hello World 2</p>;
+      return <p>Hello World 4</p>;
   }
 }
 

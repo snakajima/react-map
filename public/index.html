@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v0.33.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v0.33.1/mapbox-gl.css" rel='stylesheet' />
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     <!--
       Notice the use of %PUBLIC_URL% in the tag above.
@@ -27,5 +29,13 @@
       To begin the development, run `npm start`.
       To create a production bundle, use `npm run build`.
     -->
+    <div id='map' style='width: 400px; height: 300px;'></div>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoic25ha2FqaW1hIiwiYSI6ImNqMGEwZ3BlNTBnYzUycXBkbnQyaGszd3kifQ.OspnfsEpf_U7vqCFQV9kIA';
+        var map = new mapboxgl.Map({
+                                   container: 'map',
+                                   style: 'mapbox://styles/mapbox/streets-v9'
+                                   });
+    </script>
   </body>
 </html>
