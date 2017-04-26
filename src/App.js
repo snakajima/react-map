@@ -9,7 +9,7 @@ import Mapbox from './Mapbox';
 class App extends Component {
   render() {
       return (<div>
-              <Mapbox>
+              <Mapbox center={[-122.193, 47.707]} zoom={14}>
                 <p>Hello World</p>
               </Mapbox>
               </div>);

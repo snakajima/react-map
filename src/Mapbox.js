@@ -17,7 +17,9 @@ class Mapbox extends Component {
   componentDidMount() {
       this.map = new mapboxgl.Map({
                                  container: this.refs.map,
-                                 style: 'mapbox://styles/mapbox/streets-v9'
+                                 style: 'mapbox://styles/mapbox/streets-v9',
+                                  center: this.props.center,
+                                  zoom:this.props.zoom,
                                  });
   }
   componentWillUnmount() {
@@ -26,8 +28,8 @@ class Mapbox extends Component {
         }
   }
   render() {
-      return (<div className='full'>
-              <div ref='map' className='full'></div>
+      return (<div>
+              <div ref='map' className='map'></div>
               <div className='overlay'>{this.props.children}</div>
               </div>);
   }
